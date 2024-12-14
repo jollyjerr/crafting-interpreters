@@ -1,0 +1,36 @@
+# Build directories
+/build/
+# CMake files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+Makefile.user
+*.cmake
+
+# Compiled object files and binaries
+*.o
+*.a
+*.so
+*.dylib
+*.exe
+*.out
+
+# IDE and editor files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userprefs
+*.swp
+*.bak
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+
+# OS-specific files
+.DS_Store       # macOS
+Thumbs.db       # Windows
+desktop.ini     # Windows
