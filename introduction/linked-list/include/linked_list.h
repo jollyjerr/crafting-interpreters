@@ -8,10 +8,16 @@ typedef struct Node {
   struct Node *prev;
 } Node;
 
+/* Prints the list data */
+void print_list(Node *list);
+
 /* Creates a new node and adds it after prev on the list. */
 void insert(Node **list, Node *prev, const char *data);
 
-/* Prints the list data */
-void print_list(Node *list);
+/* Returns a pointer to a node with this data */
+Node *find(Node *list, const char *data);
+
+/* Remove a node from the list */
+void delete(Node **list, Node *target);
 
 #endif

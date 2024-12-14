@@ -1,1 +1,1 @@
-cmake -B build && cmake --build build && ln -sf ./out/build/compile_commands.json . && ./build/bin/run
+cmake -B build && cmake --build build && ln -sf ./build/compile_commands.json . && ./build/bin/run
