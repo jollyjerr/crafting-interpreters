@@ -7,6 +7,7 @@ cmake_install.cmake
 Makefile
 Makefile.user
 *.cmake
+.cache/
 
 # Compiled object files and binaries
 *.o
