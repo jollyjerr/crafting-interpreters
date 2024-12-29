@@ -102,8 +102,16 @@ class Scanner {
             case '/':
                 if (match('/')) {
                     // A comment goes until the end of the line
-                    while (peek() != '\n' && !isAtEnd())
+                    while (peek() != '\n' && !isAtEnd()) {
                         advance();
+                    }
+                } else if (match('*')) {
+                    while (true) {
+                        if (match('*') && match('/')) {
+                            break;
+                        }
+                        advance();
+                    }
                 } else {
                     addToken(SLASH);
                 }
